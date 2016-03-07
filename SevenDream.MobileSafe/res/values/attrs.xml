@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="setting_item_view">
+        <attr name="settingtitle" format="string"/>
+        <attr name="desc_on" format="string"/>
+        <attr name="desc_off" format="string"/>
+        </declare-styleable>
+</resources>

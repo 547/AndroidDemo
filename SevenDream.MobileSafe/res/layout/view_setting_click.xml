@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 这个是用自定义View类填充到 activity_setting里面的 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp" >
+
+    <!-- padding就是向外扩张 -->
+
+    <TextView
+        android:id="@+id/tv_setting_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/setautoupdata"
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/tv_setting_decs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_setting_item"
+        android:text="@string/autoupdataon"
+        android:textColor="#a000"
+        android:textSize="15sp" />
+    <!-- 第四位可以设置像素0表示全透明，a表示半透明，f表示不透明 -->
+	<ImageView 
+     	android:id="@+id/cb_setting_stat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/jiantou1_pressed"
+    />
+   
+    <!-- 下面这个View是为了画一条下划线的，就是为整个View设置一个背景，TextView也可以设置背景 -->
+
+    <View
+        style="@style/view_style"
+        android:layout_below="@id/tv_setting_decs" />
+
+</RelativeLayout>

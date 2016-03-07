@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/ll_stup4">
+     <TextView
+    style="@style/title_style"
+    android:text="@string/conratutoin"/>
+      
+     <LinearLayout
+         	android:id="@+id/ll_stuo4_checox"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:layout_marginTop="5dp"
+             android:layout_marginLeft="5dp"
+             android:gravity="center_vertical">
+             
+             <CheckBox 
+                 android:id="@+id/cb_protectionswitch"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+             	android:layout_marginLeft="5dp"/>
+                 
+             <TextView
+                 android:id="@+id/tv_protectionoff"
+   			style="@style/stup_context_style"
+    		android:text="@string/protectionoff"/>
+           
+         </LinearLayout>
+         
+      <LinearLayout
+         	android:id="@+id/ll_stuo4_setPolicyManage"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:layout_marginTop="5dp"
+             android:layout_marginLeft="5dp"
+             android:gravity="center_vertical">
+                 <Button
+        android:id="@+id/bt_setPolicyManage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_select_change"
+        android:text="@string/setPolicyManage"
+        android:textSize="23sp" 
+        android:onClick="setPolicyManage"/>
+         </LinearLayout>
+         
+     <RelativeLayout
+         
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:layout_weight="1">
+
+         <ImageView
+             android:id="@+id/iv_setup1"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerInParent="true"
+             android:src="@drawable/setup3"
+             android:contentDescription="@string/miaoshu"/>
+
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentBottom="true"
+             android:layout_centerHorizontal="true"
+             android:layout_centerVertical="true">
+             
+             <ImageView 
+                 android:layout_width="wrap_content"
+            	 android:layout_height="wrap_content"
+            	android:background="@android:drawable/presence_invisible"
+            android:contentDescription="@string/miaoshu"/>
+             <ImageView 
+                 android:layout_width="wrap_content"
+            	 android:layout_height="wrap_content"
+            	android:background="@android:drawable/presence_invisible"
+            android:contentDescription="@string/miaoshu"/>
+             <ImageView 
+                 android:layout_width="wrap_content"
+            	 android:layout_height="wrap_content"
+            	android:background="@android:drawable/presence_invisible"
+            android:contentDescription="@string/miaoshu"/>
+             <ImageView 
+                 android:layout_width="wrap_content"
+            	 android:layout_height="wrap_content"
+            	android:background="@android:drawable/presence_online"
+            android:contentDescription="@string/miaoshu"/>
+         </LinearLayout>
+
+     </RelativeLayout>
+
+</LinearLayout>

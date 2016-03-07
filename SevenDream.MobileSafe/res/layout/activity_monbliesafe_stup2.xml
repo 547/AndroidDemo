@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sevendream="http://schemas.android.com/apk/res/com.sevendream.mobilesafe"
+    android:id="@+id/ll_stup2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/title_style"
+        android:text="@string/simbind" />
+
+    <TextView
+        style="@style/setup_title_style"
+        android:text="@string/adoptSIMbind" />
+
+    <TextView
+        style="@style/stup_context_style"
+        android:text="@string/simbindc1" />
+
+    <TextView
+        style="@style/stup_context_style"
+        android:text="@string/simbindc2" />
+
+    <com.sevendream.mobilesafe.view.setting_item_view
+        android:id="@+id/setting_item_view_bindsim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        sevendream:desc_off="SIM卡没有绑定"
+        sevendream:desc_on="SIM卡已经绑定"
+        sevendream:settingtitle="点击绑定SIM卡" >
+    </com.sevendream.mobilesafe.view.setting_item_view>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/iv_setup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/miaoshu"
+            android:src="@drawable/setup2" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/presence_invisible"
+                android:contentDescription="@string/miaoshu" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/presence_online"
+                android:contentDescription="@string/miaoshu" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/presence_invisible"
+                android:contentDescription="@string/miaoshu" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/presence_invisible"
+                android:contentDescription="@string/miaoshu" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

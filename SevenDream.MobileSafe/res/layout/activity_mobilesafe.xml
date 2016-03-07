@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/title_style"
+        android:text="@string/shoujifangdao" />
+
+    <RelativeLayout
+        android:id="@+id/rl_mobilesafe1"
+        style="@style/RelativeLayout_style" >
+
+        <TextView
+            android:id="@+id/tv_safecode"
+            style="@style/context_Left_style"
+            android:layout_width="match_parent"
+            android:background="@drawable/select_background_change"
+            android:text="@string/safecode" />
+
+        <TextView
+            android:id="@+id/tv_safecodenum"
+            style="@style/context_Right_style"
+            android:layout_centerVertical="true"
+            android:text="@string/safecodenum" />
+
+        <View
+            style="@style/view_style"
+            android:layout_below="@id/tv_safecode" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_mobilesafe2"
+        style="@style/RelativeLayout_style" >
+
+        <TextView
+            android:id="@+id/tv_protectiononoroff"
+            style="@style/context_Left_style"
+            android:layout_width="match_parent"
+            android:background="@drawable/select_background_change"
+            android:text="@string/protectiononoroff" />
+
+        <ImageView
+            android:id="@+id/iv_lock"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/unlock"
+            android:contentDescription="@string/miaoshu" />
+
+        <View
+            style="@style/view_style"
+            android:layout_below="@id/tv_protectiononoroff" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_mobilesafe3"
+        style="@style/RelativeLayout_style" >
+
+        <TextView
+            android:id="@+id/tv_reenterstup"
+            style="@style/context_Left_style"
+            android:layout_width="match_parent"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/select_background_change"
+            android:onClick="reenterstup"
+            android:text="@string/reenterstup" />
+
+        <View
+            style="@style/view_style"
+            android:layout_below="@id/tv_reenterstup" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_functionc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/rounded_rectangle"
+            android:padding="5dp"
+            android:text="@string/functionc"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_gpsfollowcode"
+            style="@style/stup1_style"
+            android:text="@string/location" />
+
+        <TextView
+            android:id="@+id/tv_alarmmusic"
+            style="@style/stup1_style"
+            android:text="@string/alarmmusic" />
+
+        <TextView
+            android:id="@+id/tv_wipedata"
+            style="@style/stup1_style"
+            android:text="@string/wipedata" />
+
+        <TextView
+            android:id="@+id/tv_lockscreen"
+            style="@style/stup1_style"
+            android:text="@string/lockscreen" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="8dp"
+    android:paddingLeft="6dp"
+    android:paddingRight="5dp"
+    android:paddingTop="8dp" >
+
+    <ImageView
+        android:id="@+id/iv_appicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tv_appname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@id/iv_appicon"
+        android:text="4545"
+        android:textColor="#000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_appversion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_appname"
+        android:layout_below="@+id/tv_appname"
+        android:text="1.0"
+        android:textColor="#000"
+        android:textSize="12sp" />
+ <!-- 填充色渐变 
+    <Button
+        android:id="@+id/bt_xiezai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="2dp"
+        android:background="@drawable/button_select_change"
+        android:text="卸载" />
+        -->
+
+</RelativeLayout>

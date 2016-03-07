@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/ll_stup1" >
+     <TextView
+    style="@style/title_style"
+    android:text="@string/shoujifangdao"
+      />
+     <TextView
+   	style="@style/setup_title_style"
+    android:text="@string/shoujifangdaostup"
+      />
+     <TextView
+    android:id="@+id/tv_stup1SIM"
+  	 style="@style/stup1_style"
+    android:text="@string/simchange"
+      />
+     <TextView
+    android:id="@+id/tv_stup1GPS"
+  	 style="@style/stup1_style"
+    android:text="@string/gpsfollow"
+      />
+     <TextView
+    android:id="@+id/tv_stup1destroydata"
+  	 style="@style/stup1_style"
+    android:text="@string/remotedestroydata"
+      />
+     <TextView
+    android:id="@+id/tv_stup1loc"
+  	 style="@style/stup1_style"
+    android:text="@string/remoteloc"
+      />
+
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:layout_weight="1" >
+
+         <ImageView
+             android:id="@+id/iv_setup1"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerInParent="true"
+             android:src="@drawable/setup1"
+             android:contentDescription="@string/miaoshu" />
+
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentBottom="true"
+             android:layout_centerHorizontal="true"
+             android:layout_centerVertical="true"
+             >
+             <ImageView 
+                 android:layout_width="wrap_content"
+            	 android:layout_height="wrap_content"
+            	android:background="@android:drawable/presence_online"
+            	android:contentDescription="@string/miaoshu" 
+            />
+             <ImageView 
+                 android:layout_width="wrap_content"
+            	 android:layout_height="wrap_content"
+            	android:background="@android:drawable/presence_invisible"
+            	android:contentDescription="@string/miaoshu" 
+            />
+             <ImageView 
+                 android:layout_width="wrap_content"
+            	 android:layout_height="wrap_content"
+            	android:background="@android:drawable/presence_invisible"
+            	android:contentDescription="@string/miaoshu" 
+            />
+             <ImageView 
+                 android:layout_width="wrap_content"
+            	 android:layout_height="wrap_content"
+            	android:background="@android:drawable/presence_invisible"
+            	android:contentDescription="@string/miaoshu"/> 
+            
+         </LinearLayout>
+
+     </RelativeLayout>
+
+</LinearLayout>

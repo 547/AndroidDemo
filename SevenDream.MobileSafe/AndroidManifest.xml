@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sevendream.mobilesafe"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="16" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.sevendream.mobilesafe.activity.SplshActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.HomeActivity" >
+        </activity>
+        <activity android:name=".activity.SettingActivity" >
+        </activity>
+        <activity android:name=".activity.MobileSafeActivity" >
+        </activity>
+        <activity android:name=".activity.MobileSafe_setup1Activity" >
+        </activity>
+        <activity android:name=".activity.MobileSafe_setup2Activity" >
+        </activity>
+        <activity android:name=".activity.MobileSafe_setup3Activity" >
+        </activity>
+        <activity android:name=".activity.MobileSafe_setup4Activity" >
+        </activity>
+        <activity android:name=".activity.AppManagerActivity" >
+        </activity>
+        <activity android:name=".activity.CallSafeActivity" >
+        </activity>
+        <activity android:name=".activity.AToolsActivity" >
+        </activity>
+        <activity android:name=".activity.AppProgressManagerActivity" >
+        </activity>
+        <activity android:name=".activity.ClearCacheActivity" >
+        </activity>
+        <activity android:name=".activity.AddressActivity" >
+        </activity>
+        <activity
+            android:name=".activity.BackgroundActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".activity.DragViewActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <!--
+        Theme.Translucent.NoTitleBar===设置activity显示成透明、无标题栏的效果
+        Translucent==全透明
+        -->
+        <receiver android:name=".receiver.resetup_receiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receiver.sms_receiver" >
+            <intent-filter android:priority="2147483647" >
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+        <!--
+        <receiver android:name=".receiver.OutCallReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL"/>
+            </intent-filter>
+        </receiver>
+        -->
+        <receiver
+            android:name=".AdminReceiver"
+            android:description="@string/sample_device_admin_description"
+            android:label="@string/sample_device_admin"
+            android:permission="android.permission.BIND_DEVICE_ADMIN" >
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/device_admin_sample" />
+
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".activity.contactActivity" >
+        </activity>
+
+        <service android:name=".service.AddressService" >
+        </service>
+        <service android:name=".service.RocketService" >
+        </service>
+    </application>
+
+</manifest>

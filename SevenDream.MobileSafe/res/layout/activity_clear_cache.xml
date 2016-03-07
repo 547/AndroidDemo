@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sevendream="http://schemas.android.com/apk/res/com.sevendream.mobilesafe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/title_style"
+        android:text="缓存清理" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_cacheSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:text="4545" />
+
+            <TextView
+                android:id="@+id/tv_cache"
+                style="@style/context_Left_style"
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:background="@drawable/button_select_change"
+                
+                android:onClick="clearCache"
+                android:text="清理缓存" />
+        </LinearLayout>
+
+    
+    </FrameLayout>
+
+</LinearLayout>

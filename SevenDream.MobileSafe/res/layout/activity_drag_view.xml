@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5000" >
+<!-- 
+将背景设置成半透明的效果的方法步骤：
+1.<activity android:name=".activity.DragViewActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
+        
+        Theme.Translucent.NoTitleBar===设置activity显示成透明、无标题栏的效果
+        Translucent==全透明
+        
+         
+ 2. android:background="#5000"===将背景设置一个半透明的背景颜色===5是半透明的意思，000==是黑色        
+ -->
+    <TextView
+        android:id="@+id/tv_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:padding="15dp"
+        android:background="@drawable/call_locate_blue"
+        android:text="按住提示框拖到任意位置\n按手机返回键立即生效" />
+    <TextView
+        android:id="@+id/tv_bottom"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:padding="15dp"
+        android:background="@drawable/call_locate_blue"
+        android:text="按住提示框拖到任意位置\n按手机返回键立即生效" />
+    
+    <ImageView 
+        android:id="@+id/iv_drag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/drag"
+        android:layout_marginTop="90dp"
+        android:clickable="true"
+        
+        />
+
+   
+
+</RelativeLayout>

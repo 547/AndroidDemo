@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+
+    <!-- 填充色渐变 -->
+    <!-- angle是角，角度的意思 -->
+    <!-- 开始颜色 -->
+    <!-- 结束颜色 -->
+    <gradient
+        android:angle="45"
+        android:endColor="#cccccc"
+        android:startColor="#ccccff" />
+
+    <!-- 填充    矩形的边距 与内部元素的距离 -->
+    <padding
+        android:bottom="7dp"
+        android:left="7dp"
+        android:right="7dp"
+        android:top="7dp" />
+
+    <!-- 圆角的半径 -->
+    <corners android:radius="8dp" />
+
+    <!-- 填充色为纯色 -->
+    <!-- <solid android:color=""/> -->
+    <!-- 边框 -->
+    <!-- dash是虚线 -->
+    <!-- <stroke android:dashWidth=""/> -->
+
+</shape>

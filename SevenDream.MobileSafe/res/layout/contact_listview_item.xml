@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/iv_contactpeople"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/contactpeople"
+        android:contentDescription="@string/miaoshu" />
+<LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:id="@+id/tv_contactname"
+        style="@style/stup_context_style"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp" 
+        android:text="@string/contactpeople1"/>
+    <TextView
+        android:id="@+id/tv_contactphone"
+        style="@style/stup_context_style"
+        android:textSize="14sp"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/ablack"
+        android:layout_marginLeft="10dp" 
+        android:text="@string/contactphone1"/>
+    
+</LinearLayout>
+    
+
+</LinearLayout>

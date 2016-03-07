@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sevendream="http://schemas.android.com/apk/res/com.sevendream.mobilesafe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView
+    style="@style/title_style"
+    android:text="@string/shezhizhongxin"
+      />
+    <com.sevendream.mobilesafe.view.setting_item_view
+        android:id="@+id/setting_item_view_aotoUpdate" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        sevendream:settingtitle="自动更新设置"
+        sevendream:desc_on="自动更新已开启"
+        sevendream:desc_off="自动更新已关闭"
+        />
+     <com.sevendream.mobilesafe.view.setting_item_view
+        android:id="@+id/siv_address" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        sevendream:settingtitle="电话归属地显示设置"
+        sevendream:desc_on="归属地显示已开启"
+        sevendream:desc_off="归属地显示已关闭"
+        />
+      <com.sevendream.mobilesafe.view.SettingClickView
+        android:id="@+id/scv_address_style" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+      
+      <com.sevendream.mobilesafe.view.SettingClickView
+        android:id="@+id/scv_address_location" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>
